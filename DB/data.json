@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "customers": [
+    {
+      "id": 1,
+      "name": "John",
+      "lastName": "Doe",
+      "date": "2024-07-22",
+      "phone": "123-456-7890"
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "lastName": "Smith",
+      "date": "2024-07-23",
+      "phone": "987-654-3210"
+    },
+    {
+      "id": 3,
+      "name": "Alice",
+      "lastName": "Johnson",
+      "date": "2024-07-24",
+      "phone": "555-123-4567"
+    },
+    {
+      "id": 4,
+      "name": "Bob",
+      "lastName": "Brown",
+      "date": "2024-07-25",
+      "phone": "555-234-5678"
+    },
+    {
+      "id": 5,
+      "name": "Charlie",
+      "lastName": "Davis",
+      "date": "2024-07-26",
+      "phone": "555-345-6789"
+    },
+    {
+      "id": 6,
+      "name": "David",
+      "lastName": "Wilson",
+      "date": "2024-07-27",
+      "phone": "555-456-7890"
+    },
+    {
+      "id": 7,
+      "name": "Eve",
+      "lastName": "Taylor",
+      "date": "2024-07-28",
+      "phone": "555-567-8901"
+    },
+    {
+      "id": 8,
+      "name": "Frank",
+      "lastName": "Moore",
+      "date": "2024-07-29",
+      "phone": "555-678-9012"
+    },
+    {
+      "id": 9,
+      "name": "Grace",
+      "lastName": "Anderson",
+      "date": "2024-07-30",
+      "phone": "555-789-0123"
+    },
+    {
+      "id": 10,
+      "name": "Hannah",
+      "lastName": "Thomas",
+      "date": "2024-07-31",
+      "phone": "555-890-1234"
+    },
+    {
+      "id": 11,
+      "name": "Irene",
+      "lastName": "Jackson",
+      "date": "2024-08-01",
+      "phone": "555-901-2345"
+    },
+    {
+      "id": 12,
+      "name": "Jack",
+      "lastName": "White",
+      "date": "2024-08-02",
+      "phone": "555-012-3456"
+    }
+  ]
+}
