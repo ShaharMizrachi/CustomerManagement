@@ -34,6 +34,24 @@ namespace BackCustomerManagement.Controllers
             }
         }
 
+        // GET api/customers
+        [HttpPost("CustomerVerification")]
+        public ActionResult<IEnumerable<Customer>> CustomerVerifucatikon([FromBody] Customer customerFromUser)
+        {
+            var customers = _jsonFileService.GetCustomers();
+            var customer = customers.FirstOrDefault((c)=>c.Email == customerFromUser.Email && c.Password == customerFromUser.Password );
+            if (customer == null)
+            {
+                return BadRequest("Access Denied");
+                
+            }
+            else
+            {
+                return Ok("access granted");
+
+            }
+        }
+
 
         // get api/customer/{id}
         [HttpGet("Customer/{id}")]

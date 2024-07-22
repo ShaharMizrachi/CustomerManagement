@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+
 import './App.css';
+import { CustomersList, deleteCustomerById, getCustomerById } from './api/api';
+import LoginPage from './screens/loginPage/LoginPage';
 
 function App() {
+
+
+
+  useEffect(() => {
+
+    // getCustomerById(1)
+    // deleteCustomerById(5)
+    CustomersList(2)
+  }, [])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LoginPage />
     </div>
   );
 }

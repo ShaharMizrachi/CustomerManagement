@@ -30,3 +30,4 @@ C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\obj\Debu
 C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\obj\Debug\net8.0\BackCustomerManagement.pdb
 C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\obj\Debug\net8.0\BackCustomerManagement.genruntimeconfig.cache
 C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\obj\Debug\net8.0\ref\BackCustomerManagement.dll
+C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\obj\Debug\net8.0\BackCustomerManagement.sourcelink.json

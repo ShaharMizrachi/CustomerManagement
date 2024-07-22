@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text.Json;
+﻿using System.Text.Json;
 using BackCustomerManagement.Models;
 using BackCustomerManagement.Interfaces;
 
@@ -30,15 +27,18 @@ namespace BackCustomerManagement.Services
 
         public void SaveCustomerData(CustomerData customerData)
         {
-            using (var outputStream = File.OpenWrite(_filePath))
+            // Open the file with FileMode.Create to overwrite the existing content
+            using (var outputStream = new FileStream(_filePath, FileMode.Create, FileAccess.Write))
+            using (var writer = new Utf8JsonWriter(outputStream, new JsonWriterOptions
             {
-                JsonSerializer.Serialize(new Utf8JsonWriter(outputStream, new JsonWriterOptions
-                {
-                    SkipValidation = true,
-                    Indented = true
-                }), customerData);
+                SkipValidation = true,
+                Indented = true
+            }))
+            {
+                JsonSerializer.Serialize(writer, customerData);
             }
         }
+
 
         public IEnumerable<Customer> GetCustomers()
         {
