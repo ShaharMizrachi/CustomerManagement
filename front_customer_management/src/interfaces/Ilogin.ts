@@ -8,3 +8,8 @@ export interface iCustomer {
   Password?: string;
   VersionHolding?: string | null;
 }
+
+export interface iCustomerData {
+  version: string;
+  customers: iCustomer[];
+}

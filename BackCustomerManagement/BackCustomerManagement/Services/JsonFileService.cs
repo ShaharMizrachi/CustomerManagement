@@ -13,7 +13,7 @@ namespace BackCustomerManagement.Services
             _filePath = filePath;
         }
 
-        public CustomerData GetCustomerData()
+        public CustomerData GetCustomersAndVersion()
         {
             using (var jsonFileReader = File.OpenText(_filePath))
             {
@@ -42,13 +42,13 @@ namespace BackCustomerManagement.Services
 
         public IEnumerable<Customer> GetCustomers()
         {
-            var customerData = GetCustomerData();
+            var customerData = GetCustomersAndVersion();
             return customerData.Customers;
         }
 
         public void AddCustomer(Customer newCustomer)
         {
-            var customerData = GetCustomerData();
+            var customerData = GetCustomersAndVersion();
             newCustomer.Id = customerData.Customers.Max(c => c.Id) + 1;
             customerData.Customers.Add(newCustomer);
             SaveCustomerData(customerData);
@@ -56,7 +56,7 @@ namespace BackCustomerManagement.Services
 
         public void UpdateCustomer(Customer updatedCustomer)
         {
-            var customerData = GetCustomerData();
+            var customerData = GetCustomersAndVersion();
             var customer = customerData.Customers.FirstOrDefault(c => c.Id == updatedCustomer.Id);
 
             if (customer != null)
@@ -76,7 +76,7 @@ namespace BackCustomerManagement.Services
         // Method to delete a customer
         public void DeleteCustomer(int customerId)
         {
-            var customerData = GetCustomerData();
+            var customerData = GetCustomersAndVersion();
             var customer = customerData.Customers.FirstOrDefault(c => c.Id == customerId);
 
             if (customer != null)

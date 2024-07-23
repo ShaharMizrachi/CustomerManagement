@@ -8,8 +8,7 @@
       "Email": "john.doe@example.com",
       "Date": "2024-07-22",
       "Phone": "123-456-7890",
-      "Password": "password123",
-      "VersionHolding": null
+      "Password": "password123"
     },
     {
       "Id": 2,
@@ -18,8 +17,7 @@
       "Email": "jane.smith@example.com",
       "Date": "2024-07-23",
       "Phone": "987-654-3210",
-      "Password": "password456",
-      "VersionHolding": null
+      "Password": "password456"
     },
     {
       "Id": 3,
@@ -28,8 +26,7 @@
       "Email": "alice.johnson@example.com",
       "Date": "2024-07-24",
       "Phone": "555-123-4567",
-      "Password": "password789",
-      "VersionHolding": null
+      "Password": "password789"
     },
     {
       "Id": 4,
@@ -38,8 +35,7 @@
       "Email": "bob.brown@example.com",
       "Date": "2024-07-25",
       "Phone": "555-234-5678",
-      "Password": "password012",
-      "VersionHolding": null
+      "Password": "password012"
     },
     {
       "Id": 6,
@@ -48,8 +44,7 @@
       "Email": "david.wilson@example.com",
       "Date": "2024-07-27",
       "Phone": "555-456-7890",
-      "Password": "password678",
-      "VersionHolding": null
+      "Password": "password678"
     },
     {
       "Id": 7,
@@ -58,8 +53,7 @@
       "Email": "eve.taylor@example.com",
       "Date": "2024-07-28",
       "Phone": "555-567-8901",
-      "Password": "password901",
-      "VersionHolding": null
+      "Password": "password901"
     },
     {
       "Id": 8,
@@ -68,8 +62,7 @@
       "Email": "frank.moore@example.com",
       "Date": "2024-07-29",
       "Phone": "555-678-9012",
-      "Password": "password234",
-      "VersionHolding": null
+      "Password": "password234"
     },
     {
       "Id": 9,
@@ -78,8 +71,7 @@
       "Email": "grace.anderson@example.com",
       "Date": "2024-07-30",
       "Phone": "555-789-0123",
-      "Password": "password567",
-      "VersionHolding": null
+      "Password": "password567"
     },
     {
       "Id": 10,
@@ -88,8 +80,7 @@
       "Email": "hannah.thomas@example.com",
       "Date": "2024-07-31",
       "Phone": "555-890-1234",
-      "Password": "password890",
-      "VersionHolding": null
+      "Password": "password890"
     },
     {
       "Id": 11,
@@ -98,8 +89,7 @@
       "Email": "irene.jackson@example.com",
       "Date": "2024-08-01",
       "Phone": "555-901-2345",
-      "Password": "password123",
-      "VersionHolding": null
+      "Password": "password123"
     },
     {
       "Id": 12,
@@ -108,8 +98,7 @@
       "Email": "jack.white@example.com",
       "Date": "2024-08-02",
       "Phone": "555-012-3456",
-      "Password": "password456",
-      "VersionHolding": null
+      "Password": "password456"
     }
   ]
 }

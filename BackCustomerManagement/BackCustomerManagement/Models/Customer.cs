@@ -9,7 +9,7 @@
         public string? Date { get; set; }
         public string? Phone { get; set; }
         public string? Password { get; set; }
-        public string? VersionHolding { get; set; }
+        
 
 
     }

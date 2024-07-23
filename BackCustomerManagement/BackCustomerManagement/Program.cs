@@ -3,6 +3,7 @@
 
 using BackCustomerManagement.Interfaces;
 using BackCustomerManagement.Services;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 

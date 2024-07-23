@@ -3,6 +3,7 @@ using BackCustomerManagement.Models;
 using BackCustomerManagement.Services;
 using System.Collections.Generic;
 using BackCustomerManagement.Interfaces;
+using Microsoft.AspNetCore.Identity;
 
 namespace BackCustomerManagement.Controllers
 {
@@ -25,7 +26,7 @@ namespace BackCustomerManagement.Controllers
             var version = _jsonFileService.GetVersion();
             if (customerVersion != decimal.Parse(version) || version == null)
             {
-                return Ok(customers);
+                return Ok(_jsonFileService.GetCustomersAndVersion());
             }
             else
             {
@@ -39,6 +40,7 @@ namespace BackCustomerManagement.Controllers
         public ActionResult<IEnumerable<Customer>> CustomerVerifucatikon([FromBody] Customer customerFromUser)
         {
             var customers = _jsonFileService.GetCustomers();
+            //var hashPass = customerFromUser.Password.hash
             var customer = customers.FirstOrDefault((c)=>c.Email == customerFromUser.Email && c.Password == customerFromUser.Password );
             if (customer == null)
             {

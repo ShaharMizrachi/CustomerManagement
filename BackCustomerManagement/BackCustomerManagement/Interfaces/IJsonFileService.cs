@@ -4,7 +4,7 @@ namespace BackCustomerManagement.Interfaces
 {
     public interface IJsonFileService
     {
-        CustomerData GetCustomerData();
+        CustomerData GetCustomersAndVersion();
         void SaveCustomerData(CustomerData customerData);
         IEnumerable<Customer> GetCustomers();
         void AddCustomer(Customer newCustomer);

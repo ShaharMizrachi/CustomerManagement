@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|c:\\git\\customermanagement\\backcustomermanagement\\backcustomermanagement\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|solutionrelative:backcustomermanagement\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|c:\\git\\customermanagement\\backcustomermanagement\\backcustomermanagement\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|solutionrelative:backcustomermanagement\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|c:\\git\\customermanagement\\backcustomermanagement\\backcustomermanagement\\models\\customerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|solutionrelative:backcustomermanagement\\models\\customerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|c:\\git\\customermanagement\\backcustomermanagement\\backcustomermanagement\\interfaces\\ijsonfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|solutionrelative:backcustomermanagement\\interfaces\\ijsonfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|c:\\git\\customermanagement\\backcustomermanagement\\backcustomermanagement\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|solutionrelative:backcustomermanagement\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|c:\\git\\customermanagement\\backcustomermanagement\\backcustomermanagement\\services\\jsonfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +17,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|c:\\git\\customermanagement\\backcustomermanagement\\backcustomermanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|solutionrelative:backcustomermanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|c:\\git\\customermanagement\\backcustomermanagement\\backcustomermanagement\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|solutionrelative:backcustomermanagement\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|c:\\git\\customermanagement\\backcustomermanagement\\backcustomermanagement\\interfaces\\ijsonfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|solutionrelative:backcustomermanagement\\interfaces\\ijsonfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47E6D8BD-1952-44AE-920E-0B056190AC26}|BackCustomerManagement\\BackCustomerManagement.csproj|c:\\git\\customermanagement\\backcustomermanagement\\backcustomermanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -38,82 +38,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "IJsonFileService.cs",
               "DocumentMoniker": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\BackCustomerManagement\\Interfaces\\IJsonFileService.cs",
               "RelativeDocumentMoniker": "BackCustomerManagement\\Interfaces\\IJsonFileService.cs",
               "ToolTip": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\BackCustomerManagement\\Interfaces\\IJsonFileService.cs",
               "RelativeToolTip": "BackCustomerManagement\\Interfaces\\IJsonFileService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T03:29:34.787Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "JsonFileService.cs",
               "DocumentMoniker": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\BackCustomerManagement\\Services\\JsonFileService.cs",
               "RelativeDocumentMoniker": "BackCustomerManagement\\Services\\JsonFileService.cs",
               "ToolTip": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\BackCustomerManagement\\Services\\JsonFileService.cs",
               "RelativeToolTip": "BackCustomerManagement\\Services\\JsonFileService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBwAAAAJAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T03:22:13.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\BackCustomerManagement\\Program.cs",
               "RelativeDocumentMoniker": "BackCustomerManagement\\Program.cs",
               "ToolTip": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\BackCustomerManagement\\Program.cs",
               "RelativeToolTip": "BackCustomerManagement\\Program.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAYwA0AAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T03:17:55.145Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\BackCustomerManagement\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "BackCustomerManagement\\Controllers\\CustomerController.cs",
               "ToolTip": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\BackCustomerManagement\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "BackCustomerManagement\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAswCoAAAAhAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwCMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T03:15:30.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CustomerData.cs",
               "DocumentMoniker": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\BackCustomerManagement\\Models\\CustomerData.cs",
               "RelativeDocumentMoniker": "BackCustomerManagement\\Models\\CustomerData.cs",
               "ToolTip": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\BackCustomerManagement\\Models\\CustomerData.cs",
               "RelativeToolTip": "BackCustomerManagement\\Models\\CustomerData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T02:59:49.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\BackCustomerManagement\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "BackCustomerManagement\\Models\\Customer.cs",
               "ToolTip": "C:\\Git\\CustomerManagement\\BackCustomerManagement\\BackCustomerManagement\\Models\\Customer.cs",
               "RelativeToolTip": "BackCustomerManagement\\Models\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T02:58:24.499Z",
               "EditorCaption": ""
@@ -128,7 +128,8 @@
               "RelativeToolTip": "BackCustomerManagement\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-22T02:49:43.716Z"
+              "WhenOpened": "2024-07-22T02:49:43.716Z",
+              "EditorCaption": ""
             }
           ]
         }
