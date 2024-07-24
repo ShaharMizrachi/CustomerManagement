@@ -31,3 +31,12 @@ C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\obj\Debu
 C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\obj\Debug\net8.0\BackCustomerManagement.genruntimeconfig.cache
 C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\obj\Debug\net8.0\ref\BackCustomerManagement.dll
 C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\obj\Debug\net8.0\BackCustomerManagement.sourcelink.json
+C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Git\CustomerManagement\BackCustomerManagement\BackCustomerManagement\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

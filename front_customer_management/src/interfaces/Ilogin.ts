@@ -1,11 +1,11 @@
 export interface iCustomer {
-  Id?: number;
-  Name: string;
-  LastName: string;
-  Email: string;
-  Date?: string;
-  Phone?: string;
-  Password?: string;
+  id?: number;
+  name: string;
+  lastName: string;
+  email: string;
+  date?: string;
+  phone?: string;
+  password?: string;
   VersionHolding?: string | null;
 }
 

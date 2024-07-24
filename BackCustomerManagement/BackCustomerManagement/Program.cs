@@ -2,6 +2,7 @@
 
 
 using BackCustomerManagement.Interfaces;
+using BackCustomerManagement.Models;
 using BackCustomerManagement.Services;
 using Microsoft.AspNetCore.Identity;
 
@@ -10,18 +11,20 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-// Register JsonFileService
+
+builder.Services.AddScoped<IPasswordHasher<Customer>, PasswordHasher<Customer>>();
+
+
 builder.Services.AddScoped<IJsonFileService>(provider =>
-    new JsonFileService("C:\\Git\\CustomerManagement\\DB\\data.json"));
+    new JsonFileService(
+        "C:\\Git\\CustomerManagement\\DB\\data.json",
+        provider.GetRequiredService<IPasswordHasher<Customer>>()));
 
 
-// Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 
 
 builder.Services.AddCors(options =>
@@ -36,8 +39,6 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

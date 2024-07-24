@@ -23,6 +23,7 @@ export const verificationCustomer = async (logInCustomer: iCustomer) => {
     console.log("logInCustomer", userToSend);
     const data = await url.post("CustomerVerification", logInCustomer);
     console.log("ResultverificationCustomer", data);
+    return data.data;
   }, "verificationCustomer");
 };
 
@@ -30,7 +31,7 @@ export const CustomersList = async (versionNumber: number = 0) => {
   return makeRequest(async () => {
     const data = await url.get(`Customers?customerVersion=${versionNumber}`);
     console.log("CustomersList", data);
-    return data;
+    return data.data;
   }, "CustomersList");
 };
 
@@ -54,4 +55,12 @@ export const editCustomerById = async (customerId: number) => {
     const data = await url.put(`Customer/${customerId}`);
     console.log("deleteCustomerById", data);
   }, "deleteCustomerById");
+};
+
+export const getVersion = async () => {
+  return makeRequest(async () => {
+    const response = await url.get("Customerslist/version");
+    console.log("getVersion", response.data);
+    return response.data;
+  }, "getVersion");
 };

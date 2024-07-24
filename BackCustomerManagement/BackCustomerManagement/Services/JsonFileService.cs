@@ -1,16 +1,19 @@
 ﻿using System.Text.Json;
 using BackCustomerManagement.Models;
 using BackCustomerManagement.Interfaces;
+using Microsoft.AspNetCore.Identity;
 
 namespace BackCustomerManagement.Services
 {
     public class JsonFileService: IJsonFileService
     {
         private readonly string _filePath;
+        private readonly IPasswordHasher<Customer> _passwordHasher;
 
-        public JsonFileService(string filePath)
+        public JsonFileService(string filePath, IPasswordHasher<Customer> passwordHasher)
         {
             _filePath = filePath;
+            _passwordHasher = passwordHasher;
         }
 
         public CustomerData GetCustomersAndVersion()
@@ -27,7 +30,7 @@ namespace BackCustomerManagement.Services
 
         public void SaveCustomerData(CustomerData customerData)
         {
-            // Open the file with FileMode.Create to overwrite the existing content
+           
             using (var outputStream = new FileStream(_filePath, FileMode.Create, FileAccess.Write))
             using (var writer = new Utf8JsonWriter(outputStream, new JsonWriterOptions
             {
@@ -58,13 +61,21 @@ namespace BackCustomerManagement.Services
         {
             var customerData = GetCustomersAndVersion();
             var customer = customerData.Customers.FirstOrDefault(c => c.Id == updatedCustomer.Id);
-
+            var newVersionTemp = (int.Parse(customerData.Version) + 1).ToString();
             if (customer != null)
             {
                 customer.Name = updatedCustomer.Name;
                 customer.LastName = updatedCustomer.LastName;
                 customer.Date = updatedCustomer.Date;
                 customer.Phone = updatedCustomer.Phone;
+                customer.Email = updatedCustomer.Email;
+                customer.Password = updatedCustomer.Password;
+                customerData.Version = newVersionTemp;
+                //if (!string.IsNullOrEmpty(updatedCustomer.Password))
+                //{
+                //   /* customer.Password = */HashUserPassword(customer);
+                //}
+
                 SaveCustomerData(customerData);
             }
             else
@@ -73,7 +84,8 @@ namespace BackCustomerManagement.Services
             }
         }
 
-        // Method to delete a customer
+
+
         public void DeleteCustomer(int customerId)
         {
             var customerData = GetCustomersAndVersion();
@@ -102,6 +114,28 @@ namespace BackCustomerManagement.Services
                 return customerData?.Version;
             }
         }
+
+        public void UpdatePasswords(IPasswordHasher<Customer> passwordHasher)
+        {
+            var customerData = GetCustomersAndVersion();
+            foreach (var customer in customerData.Customers)
+            {
+                customer.Password = passwordHasher.HashPassword(customer, customer.Password);
+            }
+            SaveCustomerData(customerData);
+        }
+
+      
+     public string HashUserPassword(Customer customer)
+{
+    if (customer == null || _passwordHasher == null)
+        throw new ArgumentNullException("Customer or PasswordHasher cannot be null.");
+
+
+    var hashedPassword = _passwordHasher.HashPassword(customer, customer.Password);
+    return hashedPassword;
+}
+
 
 
 

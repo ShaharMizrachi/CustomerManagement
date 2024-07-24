@@ -1,4 +1,5 @@
 ﻿using BackCustomerManagement.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace BackCustomerManagement.Interfaces
 {
@@ -11,5 +12,7 @@ namespace BackCustomerManagement.Interfaces
         void UpdateCustomer(Customer updatedCustomer);
         void DeleteCustomer(int customerId);
         string GetVersion();
+        void UpdatePasswords(IPasswordHasher<Customer> passwordHasher);
+        string HashUserPassword(Customer customer);
     }
 }

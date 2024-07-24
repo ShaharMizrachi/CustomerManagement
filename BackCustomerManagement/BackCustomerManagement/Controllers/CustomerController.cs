@@ -12,11 +12,14 @@ namespace BackCustomerManagement.Controllers
     public class CustomerController : ControllerBase
     {
         private readonly IJsonFileService _jsonFileService;
+        private readonly IPasswordHasher<Customer> _passwordHasher;
 
-        public CustomerController(IJsonFileService jsonFileService)
+        public CustomerController(IJsonFileService jsonFileService, IPasswordHasher<Customer> passwordHasher)
         {
             _jsonFileService = jsonFileService;
+            _passwordHasher = passwordHasher;
         }
+
 
         // GET api/customers
         [HttpGet("Customers")]
@@ -35,22 +38,63 @@ namespace BackCustomerManagement.Controllers
             }
         }
 
+
+
         // GET api/customers
         [HttpPost("CustomerVerification")]
         public ActionResult<IEnumerable<Customer>> CustomerVerifucatikon([FromBody] Customer customerFromUser)
         {
             var customers = _jsonFileService.GetCustomers();
-            //var hashPass = customerFromUser.Password.hash
-            var customer = customers.FirstOrDefault((c)=>c.Email == customerFromUser.Email && c.Password == customerFromUser.Password );
+            
+            var customer = customers.FirstOrDefault((c)=>c.Email == customerFromUser.Email && c.Password == customerFromUser.Password);
+
             if (customer == null)
             {
                 return BadRequest("Access Denied");
-                
+
             }
             else
             {
                 return Ok("access granted");
+            }
+            //var hashPassResult = _passwordHasher.VerifyHashedPassword(customer, customer.Password, customerFromUser.Password);
 
+
+            //if (hashPassResult == PasswordVerificationResult.Success)
+            //{
+            //    return Ok("access granted");
+            //}
+            //else
+            //{
+            //    return BadRequest("Access Denied");
+
+            //}
+        }
+
+
+
+        // PUT api/customer/{id}
+        [HttpPut("Customer")]
+        public IActionResult EditCustomer([FromBody] Customer updatedCustomer)
+        {
+            if (updatedCustomer == null)
+            {
+                return BadRequest();
+            }
+
+            try
+            {
+                _jsonFileService.UpdateCustomer(updatedCustomer);
+                return Ok("CUstomer has been edit");
+            }
+            catch (KeyNotFoundException knfEx)
+            {
+                return NotFound(knfEx.Message);
+            }
+            catch (Exception ex)
+            {
+               
+                return StatusCode(500, "An error occurred while updating the customer.");
             }
         }
 
@@ -71,27 +115,6 @@ namespace BackCustomerManagement.Controllers
         }
 
 
-
-
-        // PUT api/customer/{id}
-        [HttpPut("Customer/{id}")]
-        public IActionResult EditCustomer(int id, [FromBody] Customer updatedCustomer)
-        {
-            if (updatedCustomer == null || updatedCustomer.Id != id)
-            {
-                return BadRequest();
-            }
-
-            var existingCustomer = _jsonFileService.GetCustomers().FirstOrDefault(c => c.Id == id);
-
-            if (existingCustomer == null)
-            {
-                return NotFound();
-            }
-
-            _jsonFileService.UpdateCustomer(updatedCustomer);
-            return NoContent();
-        }
 
         // DELETE api/customer/{id}
         [HttpDelete("Customer/{id}")]
